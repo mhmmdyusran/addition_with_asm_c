@@ -13,11 +13,11 @@ This project demonstrates linking **C code** with **32-bit Assembly (x86)** usin
 
 Run the program with:
 
-````bash
+```bash
 nasm -f elf32 add.asm -o linker.o
 gcc -m32 sum.c linker.o -o linker
 ./linker
-```
+````
 
 ### Prerequisites
 
