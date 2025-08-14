@@ -1,0 +1,4 @@
+.vscode
+linker
+linker.o
+build.log
