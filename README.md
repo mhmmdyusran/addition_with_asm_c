@@ -14,7 +14,9 @@ This project demonstrates linking **C code** with **32-bit Assembly (x86)** usin
 Run the program with:
 
 ```bash
-./run_linker.sh
+nasm -f elf32 add.asm -o linker.o
+gcc -m32 sum.c linker.o -o linker
+./linker
 ```
 
 ### Prerequisites
@@ -39,12 +41,16 @@ sudo apt install build-essential gcc-multilib nasm
 > **Catatan:** Program ini menggunakan **arsitektur Assembly 32-bit (x86)**.  
 > Pada sistem 64-bit, Anda harus mengaktifkan dukungan kompilasi 32-bit menggunakan `gcc-multilib`.
 
-### Cara Menjalankan Program
+### Cara Menjalankan Programv
+
+console.log("🚀 ~ Program:", Program)
 
 Jalankan program dengan:
 
 ```bash
-./run_linker.sh
+nasm -f elf32 add.asm -o linker.o
+gcc -m32 sum.c linker.o -o linker
+./linker
 ```
 
 ### Prasyarat
@@ -59,5 +65,5 @@ sudo apt install build-essential gcc-multilib nasm
 ### Deskripsi Paket
 
 - **build-essential** → Peralatan inti untuk kompilasi (GCC, G++, Make, dan pustaka standar)
-- **gcc-multilib** → Memungkinkan kompilasi dan *linking* program 32-bit di sistem 64-bit
-- **nasm** → Netwide Assembler, digunakan untuk meng-*assemble* file `.asm` menjadi file objek
+- **gcc-multilib** → Memungkinkan kompilasi dan _linking_ program 32-bit di sistem 64-bit
+- **nasm** → Netwide Assembler, digunakan untuk meng-_assemble_ file `.asm` menjadi file objek
