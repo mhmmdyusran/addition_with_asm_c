@@ -1,5 +1,3 @@
----
-
 ````markdown
 # Linker Program
 
@@ -65,7 +63,4 @@ sudo apt install build-essential gcc-multilib nasm
 - **gcc-multilib** → Memungkinkan kompilasi dan _linking_ program 32-bit di sistem 64-bit.
 - **nasm** → Netwide Assembler, digunakan untuk meng-_assemble_ file `.asm` menjadi file objek.
 
-```
-
----
 ```
